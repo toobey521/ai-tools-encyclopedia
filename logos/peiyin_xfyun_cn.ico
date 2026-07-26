@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>404</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC";
+		background: #f5f5f5;
+	}
+	.content{
+		width: 470px;
+		margin: 0 auto;
+		margin-top:150px;
+	}
+	p{
+		text-align: center;
+		color: #8d8d8d;
+		font-size: 18px;
+		margin: 42px 0;
+	}
+	.btn{
+		overflow: hidden;
+		width: 440px;
+		margin: 0 auto;
+	}
+	.btn a{
+		display: inline-block;
+		width: 140px;
+		height: 42px;
+		line-height: 42px;
+		text-align: center;
+		text-decoration: none;
+		background: #626b86;
+		border-radius: 6px;
+		color: #fff;
+		font-size: 16px;
+	}
+	.btn a:hover{
+		background: #474e61
+	}
+	.return-back{
+		float: left;
+	}
+	.return-home{
+		float: right;
+	}
+
+</style>
+<body>
+<div class="content">
+	<img src="/themes/images/404.jpg">
+	<p>很抱歉，您访问的页面不存在...</p>
+	<div class="btn">
+		<a href="javascript:window.history.go(-1)" class="return-back">返回上级</a>
+		<a href="/" class="return-home">返回首页</a>
+	</div>
+</div>
+</body>
+</html>

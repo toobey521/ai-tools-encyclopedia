@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+<title>腾讯觅影</title>
+<meta http-equiv="X-UA-Compatible" content="edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="腾讯觅影，是腾讯首款将人工智能技术运用到医学领域的产品。它聚合了腾讯公司内部包括AI Lab、优图实验室、架构平台部等多个顶尖人工智能团队的能力，把图像识别、大数据处理、深度 学习等领先的技术与医学跨界融合研发而成。主要致力于将AI运用到医学相关的不同领域。目前主要有“腾讯觅影·AI 医学影像”及“腾讯觅影·AI医学辅诊”两个研究方向。">
+<meta name="keywords" content="腾讯觅影，觅影，腾讯医学，腾讯医疗，腾讯医学AI，腾讯影像，腾讯医学影像，腾讯人工智能，腾讯医学人工智能，仍寻人工智能医学影像专家，医学影像专家，AI医学专家，人工智能，医学人工智能，图像识别，早期诊断，辅助诊疗，食管癌早期筛查，肺癌筛查，宫颈癌筛查，乳腺癌筛查，智能诊疗系统，糖网筛查，癌症，癌症早期筛查">
+<meta name="author" content="">
+<meta name="referrer" content="never">
+<link rel="icon" type="image/png" href="/official/res/img/favicon.png">
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="/official/res/img/favicon.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="腾讯觅影">
+<link rel="apple-touch-icon-precomposed" href="/official/res/img/favicon.png">
+
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="/official/res/img/favicon.png">
+
+<!-- CSS Files
+================================================== -->
+<!--<link rel="stylesheet" href="/official/css/common.css?1523439637649 "type="text/css">-->
+<link rel="stylesheet" href="/official/css/common-add.css?1523439637649 " type="text/css">
+<link rel="stylesheet" href="/official/css/common.css?1538985394163" type="text/css">
+<link rel="stylesheet" href="/official/css/pro.css?1538985394163" type="text/css">
+<style>
+  .header .logo {
+    background-image: url("https://static.wecity.qq.com/h5/2021-9/10aa962a-55f2-42a0-9bd7-3d404ee4ce1c-ac35e7b37453653f2d1c5e36e659cc24.png") !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .smaller .logo {
+    background-image: url("https://static.wecity.qq.com/h5/2021-9/03e4d966-3226-448a-a120-b2237d7df08f-a789f95d388b62908ba7adbe31724c25.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+  }
+
+  .section.footer .container .panel-body .copyright .link {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section.footer .container .panel-body .copyright .link-overview {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-right: 160px;
+  }
+
+
+  .section.footer .container .panel-body .copyright .link-overview p {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 36px;
+    line-height: 24px;
+    color: #76849B;
+    white-space: nowrap;
+  }
+
+  .section.footer .container .panel-body .copyright .link-overview a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 36px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #76849B;
+  }
+
+  .section.footer .container .panel-body .copyright .link-overview a img {
+    margin-right: 4px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .section.footer .container .panel-body .copyright .link-overview p:first-child {
+    width: 100%;
+    color: #76849B;
+  }
+
+  .section.footer .container .panel-body .copyright .link-overview p a {
+    width: 50%;
+    color: #76849B;
+  }
+
+  .section.footer .container .panel-body .copyright .link-overview  a:hover {
+    width: 50%;
+    color: #3f7fff;
+  }
+
+  .section.footer .container .panel-body .copyright .link-detail {
+    display: inline-flex;
+    position: relative !important;
+    right: unset !important;
+    top: unset !important;
+    flex-wrap: wrap;
+    padding-left: 48px;
+    border-left: 1px solid #E6E9EA;
+    width: 440px;
+    text-align: left !important;
+  }
+
+  .section.footer .container .panel-body .copyright .link-detail a {
+    display: inline-block;
+    padding: 0 !important;
+    width: 50%;
+    color: #76849B;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .section.footer .container .panel-body .copyright .link-detail a:first-child {
+    margin-left: 0 !important;
+  }
+
+  .section.footer .container .panel-body .copyright .link-detail a:after {
+    display: none;
+  }
+</style>
+<script>
+  var _mtac = {};
+  (function() {
+    var mta = document.createElement("script");
+    mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+    mta.setAttribute("name", "MTAH5");
+    mta.setAttribute("sid", "500609824");
+
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(mta, s);
+  })();
+</script>
+<script src="https://static.wecity.qq.com/tha/v1/index.js"></script>
+<script>
+  var tha = THA.create({
+    appKey: '47a0aa59453a4f04a0495c72e5ca5247',
+    autoReportPV: true, // 自动上报PV
+    autoReportApiTiming: true, // 自动上报接口耗时
+    meta: {},
+    beforeReport() {}
+  });
+</script>
+    <link rel="stylesheet" href="/official/css/index.css?1523439637649 " type="text/css">
+    <style>
+      .bannerbg:not(:first-child) {
+        display: none;
+      }
+
+      .section.footer .container .panel-body .cop ul li .item .logo {
+        cursor: default;
+      }
+
+      .slick-pass {
+        z-index: 999;
+      }
+
+      .smaller .nav ul li.login-button:hover a.btn-primary-line {
+        border: 1px solid #0d78e4;
+        background-color: #1171f4;
+        background: -webkit-linear-gradient(left, #1171f4 0%, #468ff3 100%);
+        color: #fff;
+      }
+
+      .index-wrap .pro-wrap .sec-layer .sec-body .slider .slick-dots li button:before {
+        font-size: 6px;
+      }
+      /*.index-wrap .pro-wrap.zhuanjia-wrap .sec-layer .sec-body .ul-sec li .box {*/
+      /*  height: auto;*/
+      /*}*/
+      /*.index-wrap .pro-wrap.zhuanjia-wrap .sec-layer .sec-body .ul-sec li {*/
+      /*  height: auto;*/
+      /*}*/
+    </style>
+  </head>
+
+  <body id="homepage">
+    <div id="wrapper" class="index-wrap">
+      <!-- header begin -->
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="logo"><a href="/official"></a></div>
+        <div class="nav">
+          <ul>
+            <li>
+              <a href="/official">首页</a>
+            </li>
+          
+            <li>
+              <a href="#">云产品</a>
+              <!-- simple dropmenu class="product_header" begin-->
+              <section class="section dropmenu--simple" style="margin-left: -10px;">
+                <ul class="ul-menulist--simple ul-menulist--simple_margin0" style="margin: 0;">
+                  <!--li item-->
+                  
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/pathology">病理云</a></li>
+                  
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/pacs">影像云</a></li>
+                  
+                  <!--li item end-->
+                </ul>
+              </section>
+              <!-- simple dropmenu end-->
+            </li>
+            <li>
+              <a href="#">AI 产品</a>
+              <!-- simple dropmenu begin-->
+              <section class="section dropmenu--simple" style="margin-left: -30px;">
+                <ul class="ul-menulist--simple ul-menulist--simple_margin0" style="margin: 0;">
+                  <!--li item-->
+                  
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/eye">眼底青光眼</a></li>
+                  
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/medical-assistant">AI就医助手</a></li>
+                  
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/subscribe">AI精准预约</a></li>
+                  
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/clinical-assistant">AI临床助手</a></li>
+                  
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/prediagnosis">智能预问诊</a></li>
+                  
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/guidance">智能导诊技术</a></li>
+                  
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/pneumonia">肺炎智能评估系统</a></li>
+                  
+                  <!--li item end-->
+                </ul>
+              </section>
+              <!-- simple dropmenu end-->
+            </li>
+             <li>
+              <a href="/official/product/experiment">开放实验平台</a>
+            </li>
+             <li>
+              <a href="#">AI 能力</a>
+              <!-- simple dropmenu begin-->
+              <section class="section dropmenu--simple" style="margin-left: -30px;">
+                <ul class="ul-menulist--simple ul-menulist--simple_margin0" style="margin: 0;">
+                  <!--li item-->
+                  
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/liver">肝脏分割</a></li>
+                  
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/brain">脑出血检出</a></li>
+                  
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/colorectal">结直肠息肉检出</a></li>
+                  
+                  <!--li item end-->
+                </ul>
+              </section>
+              <!-- simple dropmenu end-->
+            </li>
+            <li>
+              <a href="#">下载中心</a>
+              <!-- simple dropmenu begin-->
+              <section class="section dropmenu--simple" style="margin-left: -10px;">
+                <ul class="ul-menulist--simple" style="margin: 0">
+                  <!--li item-->
+                  <li class="li-menulist" style="width: auto;"><a href="/official/product/download-white-paper">产品白皮书</a></li>
+                  <!--li item end-->
+                </ul>
+              </section>
+              <!-- simple dropmenu end-->
+            </li>
+            <li>
+              <a href="/official/news">新闻资讯</a>
+            </li>
+            <li>
+              <a href="https://contest.taop.qq.com/" target="_blank">医疗AI大赛</a>
+            </li>
+            <!--<li>-->
+            <!--    <a href="/official/contact">联系我们</a>-->
+            <!--</li>-->
+            <li class="btn btn-primary-line">
+              <a href="#partner" class="btn btn-primary-line">立即登录</a>
+              <!-- simple dropmenu begin-->
+              <section class="section dropmenu--simple">
+                <ul class="ul-menulist--simple ul-menulist--simple_margin0" style="margin: 0;">
+                  <!--li item-->
+                  <li class="li-menulist"><a href="https://miying.qq.com/webserver/index" target="_blank">AI 影像</a></li>
+                  <li class="li-menulist"><a href="https://miying.qq.com/login?mode=smsonly&system=diagonosis" target="_blank">AI 辅诊</a></li>
+                  <li class="li-menulist"><a href="https://pacs.qq.com/pacsupload/login" target="_blank">DICOM影像上传</a></li>
+                  <!--li item end-->
+                </ul>
+              </section>
+              <!-- simple dropmenu end-->
+            </li>
+            <div class="border" style="z-index: -1;"></div>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+      <!-- content begin -->
+      <div class="content">
+
+        <section class="banner">
+  <div class="single-item slider">
+    
+    <div class="bannerbg">
+      
+      <a href="/official/product/experiment" target="_self">
+        <img src="https://static.wecity.qq.com/h5/2022-3/开放实验平台-fa3033a0162a5657630784714bc83f98.png" />
+      </a>
+      
+    </div>
+    
+    <div class="bannerbg">
+      
+      <a href="/official/product/guidance" target="_self">
+        <img src="https://static.wecity.qq.com/h5/2022-5/AI辅诊-1513d95f8d66049e5bf77be5970f7ee1.png" />
+      </a>
+      
+    </div>
+    
+    <div class="bannerbg">
+      
+      <img src="https://static.wecity.qq.com/h5/2022-3/病理云banner-a0220aca23bd0b7023dc5d3c973e5fe9.png" />
+      
+    </div>
+    
+    <div class="bannerbg">
+      
+      <a href="https://contest.taop.qq.com/" target="_blank">
+        <img src="https://static.wecity.qq.com/h5/2021-8/官网PC端banner页-9779c84683d1a2a7efbbdfbe4b2c9a76.png" />
+      </a>
+      
+    </div>
+    
+    <div class="bannerbg">
+      
+      <a href="/official/detailnews/654" target="_self">
+        <img src="https://webcdn.m.qq.com/capture/cdn/37f1d0fc2f04145bb8ab76cf3595b6c7.png" />
+      </a>
+      
+    </div>
+    
+  </div>
+</section>
+
+        <section class="section news-wrap">
+    <div class="sec-layer">
+        <div class="sec-header">
+            <h2>新闻资讯</h2>
+        </div>
+        <div class="sec-body">
+            <div class="row cf">
+                <div class="col-9">
+                    <ul class="ul-sec cf">
+
+                        
+                        <a href="/official/detailnews/661">
+                            <li class="li-sec">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="img-area">
+                                        <p><img src="https://mmbiz.qpic.cn/mmbiz_png/VYwTtzwHpUh4TMd1HjdlJc8aCt7Obh0kQvnFzsJv6TevByyhR4xL55h01ibCkyrGH3XB8iamLDMuLicBX4nHgibEaQ/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1"/></p>
+                                    </div>
+
+                                    <div class="text-area">
+                                        <h3>
+                                            多走一步，仰望星空
+                                        </h3>
+
+                                        <p class="hint"><span>2021/09/10</span><span class="ft">来自： 腾讯医疗健康</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </a>
+                        
+                        <a href="/official/detailnews/660">
+                            <li class="li-sec">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="img-area">
+                                        <p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/VYwTtzwHpUhicPKPtVic4TYFVeojAVqqpafb06FNAwW7ibSnPOQzVqWUecDGEJYluWqicC8kn8KWm5bzCibbNtCMC4Q/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1"/></p>
+                                    </div>
+
+                                    <div class="text-area">
+                                        <h3>
+                                            “觅影”医学人工智能算法大赛启动 五大临床赛题向AI发起...
+                                        </h3>
+
+                                        <p class="hint"><span>2021/08/13</span><span class="ft">来自： 腾讯医疗健康</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </a>
+                        
+                        <a href="/official/detailnews/659">
+                            <li class="li-sec">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="img-area">
+                                        <p><img src="https://mmbiz.qpic.cn/mmbiz_png/VYwTtzwHpUhBojey859DpKPkJKZsJJibnxIcwNcxpoBmTGbmlHib0SKE9Q3oD21UZXWyoedJ6ZkpBC2pffibFRTOA/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1"/></p>
+                                    </div>
+
+                                    <div class="text-area">
+                                        <h3>
+                                            腾讯觅影开放实验平台全面开放注册 探索医疗影像AI产学研...
+                                        </h3>
+
+                                        <p class="hint"><span>2021/08/10</span><span class="ft">来自： 腾讯医疗健康 </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </a>
+                        
+                        <a href="/official/detailnews/658">
+                            <li class="li-sec">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="img-area">
+                                        <p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/VYwTtzwHpUhO1MfJXDYvn2UrKcfBOum2iaCPf94MpWicRCbellQnyBprAia13LiaRIJ1Z0skspkib59GZC1npwOWlIg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1"/></p>
+                                    </div>
+
+                                    <div class="text-area">
+                                        <h3>
+                                            医疗影像国家新一代人工智能开放创新平台启动，化解卡脖子问...
+                                        </h3>
+
+                                        <p class="hint"><span>2021/03/03</span><span class="ft">来自： </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </a>
+                        
+                        <a href="/official/detailnews/657">
+                            <li class="li-sec">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="img-area">
+                                        <p><img src="https://webcdn.m.qq.com/capture/cdn/444e5a8397b11b7d4c4b93ea92767a8a.jpg"/></p>
+                                    </div>
+
+                                    <div class="text-area">
+                                        <h3>
+                                            “热干面”用AI+5G向“缸炉烧饼”搭了条空中生命线
+                                        </h3>
+
+                                        <p class="hint"><span>2021/01/14</span><span class="ft">来自： </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </a>
+                        
+                        <a href="/official/detailnews/656">
+                            <li class="li-sec">
+                            <div class="box">
+                                <div class="box-body">
+                                    <div class="img-area">
+                                        <p><img src="https://webcdn.m.qq.com/capture/cdn/63dcf72e09ecfdf1891d336040bac202.jpg"/></p>
+                                    </div>
+
+                                    <div class="text-area">
+                                        <h3>
+                                            腾讯觅影获中国人工智能大赛“创新之星”奖，破解医疗AI普...
+                                        </h3>
+
+                                        <p class="hint"><span>2020/12/24</span><span class="ft">来自： 腾讯觅影</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </a>
+                        
+
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <div class="box hot-news">
+                        <div class="box-header">
+                            <h2>热门</h2>
+
+                            <div class="box-tools">
+                                <a href="/official/news">更多</a>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <ul>
+                                
+                                <li>
+                                    <div class="text-area">
+                                        <h3>
+                                            <a href="/official/detailnews/654">腾讯觅影发布影像云，设立开放实验室批量孵化AI应用</a>
+                                        </h3>
+
+                                        <p class="hint">2020/10/20</p>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="text-area">
+                                        <h3>
+                                            <a href="/official/detailnews/655">腾讯AI加速器全球招募收官在即！医疗赛道你报名了吗？</a>
+                                        </h3>
+
+                                        <p class="hint">2020/11/19</p>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="text-area">
+                                        <h3>
+                                            <a href="/official/detailnews/651">报告个好消息！国际顶级医疗AI大会，腾讯8篇论文入选</a>
+                                        </h3>
+
+                                        <p class="hint">2019/10/11</p>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="text-area">
+                                        <h3>
+                                            <a href="/official/detailnews/650">广东面向贫困户开展早癌筛查</a>
+                                        </h3>
+
+                                        <p class="hint">2019/06/16</p>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="text-area">
+                                        <h3>
+                                            <a href="/official/detailnews/649">腾讯觅影青光眼筛查功能发布 眼底疾病社区筛查开启“AI模式”</a>
+                                        </h3>
+
+                                        <p class="hint">2019/06/16</p>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="text-area">
+                                        <h3>
+                                            <a href="/official/detailnews/648">腾讯加入中国罕见病联盟 AI助力罕见病诊疗</a>
+                                        </h3>
+
+                                        <p class="hint">2019/05/27</p>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+        <!-- section begin -->
+        <div class="section pro-wrap">
+          <div class="sec-layer">
+            <div class="sec-header">
+              <h2>产品类型</h2>
+            </div>
+            <div class="sec-body">
+              <div class="item">
+                <h3>平台产品</h3>
+                <div class="row cf">
+                  <div class="col-12">
+                    <ul class="ul-sec cf">
+                      <li class="li-sec">
+                        <div class="box">
+                          <div class="box-body">
+                            <div class="img-area">
+                              <p>
+                                <i class="ico-pro pro1-1"></i>
+                              </p>
+                            </div>
+
+                            <div class="text-area">
+                              <h4>开放实验平台</h4>
+
+                              <p class="hint">
+                                <span>基于腾讯云安全存储与强大算力的医学人工智能开放创新服务平台</span>
+                              </p>
+                              <a href="/official/product/experiment" class="more">查看更多
+                                <i class="iconfont-arrownext"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <h3>云产品</h3>
+                <div class="row cf">
+                  <div class="col-12">
+                    <ul class="ul-sec cf">
+                      <li class="li-sec">
+                        <div class="box">
+                          <div class="box-body">
+                            <div class="img-area">
+                              <p>
+                                <i class="ico-pro pro2-1"></i>
+                              </p>
+                            </div>
+                            <div class="text-area">
+                              <h4>病理云</h4>
+                              <p class="hint">
+                                <span>基于一体化服务，支持病理切片扫描后的存储、分析、检索等，提升效率</span>
+                              </p>
+                              <a href="/official/product/pathology" class="more">查看更多
+                                <i class="iconfont-arrownext"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="li-sec">
+                        <div class="box">
+                          <div class="box-body">
+                            <div class="img-area">
+                              <p>
+                                <i class="ico-pro pro2-2"></i>
+                              </p>
+                            </div>
+                            <div class="text-area">
+                              <h4>影像云</h4>
+                              <p class="hint">
+                                <span>提供医学影像服务，实现医学数据安全互通，助力分级诊疗制度落地</span>
+                              </p>
+                              <a href="/official/product/pacs" class="more">查看更多
+                                <i class="iconfont-arrownext"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <h3>AI产品</h3>
+                <div class="row cf">
+                  <div class="col-12">
+                    <ul class="ul-sec cf">
+                      <li class="li-sec">
+                        <div class="box">
+                          <div class="box-body">
+                            <div class="img-area">
+                              <p>
+                                <i class="ico-pro pro3-1"></i>
+                              </p>
+                            </div>
+                            <div class="text-area">
+                              <h4>肺炎智能评估系统</h4>
+                              <p class="hint">
+                                <span>基于AI技术对肺部CT影像数据进行智能化处理，为肺炎的分析提供依据和建议</span>
+                              </p>
+                              <a href="/official/product/pneumonia" class="more">查看更多
+                                <i class="iconfont-arrownext"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="li-sec">
+                        <div class="box">
+                          <div class="box-body">
+                            <div class="img-area">
+                              <p>
+                                <i class="ico-pro pro3-2"></i>
+                              </p>
+                            </div>
+                            <div class="text-area">
+                              <h4>智能导诊</h4>
+                              <p class="hint">
+                                <span>基于医疗 AI 、自然语言处理技术的，以智能导诊为核心的 AI 产品</span>
+                              </p>
+                              <a href="/official/product/guidance" class="more">查看更多
+                                <i class="iconfont-arrownext"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="li-sec">
+                        <div class="box">
+                          <div class="box-body">
+                            <div class="img-area">
+                              <p>
+                                <i class="ico-pro pro3-3"></i>
+                              </p>
+                            </div>
+                            <div class="text-area">
+                              <h4>智能预问诊</h4>
+                              <p class="hint">
+                                <span>智能理解患者主诉，智能追问生成电子病历了解患者病情，提高效率</span>
+                              </p>
+                              <a href="/official/product/prediagnosis" class="more">查看更多
+                                <i class="iconfont-arrownext"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="li-sec">
+                        <div class="box">
+                          <div class="box-body">
+                            <div class="img-area">
+                              <p>
+                                <i class="ico-pro pro3-4"></i>
+                              </p>
+                            </div>
+                            <div class="text-area">
+                              <h4>AI临床助手</h4>
+                              <p class="hint">
+                                <span>基于先进技术，依据客观权威的知识来源，协助提升医疗服务效率</span>
+                              </p>
+                              <a href="/official/product/clinical-assistant" class="more">查看更多
+                                <i class="iconfont-arrownext"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="li-sec">
+                        <div class="box">
+                          <div class="box-body">
+                            <div class="img-area">
+                              <p>
+                                <i class="ico-pro pro3-5"></i>
+                              </p>
+                            </div>
+                            <div class="text-area">
+                              <h4>AI精准预约</h4>
+                              <p class="hint">
+                                <span>基于患者病情，提供医患精准匹配的 AI 智能判病引擎能力</span>
+                              </p>
+                              <a href="/official/product/subscribe" class="more">查看更多
+                                <i class="iconfont-arrownext"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="li-sec">
+                        <div class="box">
+                          <div class="box-body">
+                            <div class="img-area">
+                              <p>
+                                <i class="ico-pro pro3-6"></i>
+                              </p>
+                            </div>
+                            <div class="text-area">
+                              <h4>AI就医助手</h4>
+                              <p class="hint">
+                                <span>针对医疗场景需求打造的智能对话机器人</span>
+                              </p>
+                              <a href="/official/product/medical-assistant" class="more">查看更多
+                                <i class="iconfont-arrownext"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- section close -->
+        <!-- section begin -->
+
+        <!-- section close -->
+        <!-- section begin -->
+
+        <!-- section close -->
+        <!-- section begin -->
+        <div class="section ai-ability">
+          <div class="sec-layer">
+            <div class="sec-header">
+              <h2>AI能力</h2>
+            </div>
+            <div class="sec-body ai-ability__list">
+              <!-- <div class="ai-ability__item">
+                <a href="/official/product/lung">
+                  <div class="ai-ability__item-hd">
+                    <img class="ai-ability__img" src="https://static.wecity.qq.com/miying/icon-fei-afb69742225a4c83a2ba5d6bda635c10.svg" alt="" />
+                    <div class="ai-ability__title">肺结节检出</div>
+                  </div>
+                  <div class="ai-ability__item-bd">
+                    基于腾讯深度学习技术辅助基层医疗
+                    早期肺癌筛查
+                  </div>
+                </a>
+              </div> -->
+              <div class="ai-ability__item">
+                <a href="/official/product/eye">
+                  <div class="ai-ability__item-hd">
+                    <img class="ai-ability__img" src="https://static.wecity.qq.com/miying/icon-eye-8a4506937f457a89dc1d11d9ace74f29.svg" alt="" />
+                    <div class="ai-ability__title">眼底青光眼</div>
+                  </div>
+                  <div class="ai-ability__item-bd">
+                    基于腾讯深度学习技术辅助基层医疗
+                    早期青光眼筛查
+                  </div>
+                </a>
+              </div>
+              <div class="ai-ability__item">
+                <a href="/official/product/colorectal">
+                  <div class="ai-ability__item-hd">
+                    <img class="ai-ability__img" src="https://static.wecity.qq.com/miying/icon-chang-e3b049043a95750470fc3ef4ce6ce8e1.svg" alt="" />
+                    <div class="ai-ability__title">结直肠息肉检出</div>
+                  </div>
+                  <div class="ai-ability__item-bd">
+                    基于腾讯深度学习技术辅助基层医疗
+                    早期结肠癌筛查
+                  </div>
+                </a>
+              </div>
+              <div class="ai-ability__item">
+                <a href="/official/product/liver">
+                  <div class="ai-ability__item-hd">
+                    <img class="ai-ability__img" src="https://static.wecity.qq.com/miying/icon1-b21f2673984c0b8ea0660486bdcfa47b.svg" alt="" />
+                    <div class="ai-ability__title">肝脏分割</div>
+                  </div>
+                  <div class="ai-ability__item-bd">
+                    基于腾讯深度学习技术辅助基层医疗
+                    早期肝癌筛查
+                  </div>
+                </a>
+              </div>
+              <div class="ai-ability__item">
+                <a href="/official/product/brain">
+                  <div class="ai-ability__item-hd">
+                    <img class="ai-ability__img" src="https://static.wecity.qq.com/miying/icon-nao-6aeb97049d0117380b68de0ec23ac001.svg" alt="" />
+                    <div class="ai-ability__title">脑出血检出</div>
+                  </div>
+                  <div class="ai-ability__item-bd">
+                    基于腾讯深度学习技术辅助基层医疗
+                    脑出血分类
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section youshi-wrap">
+          <div class="sec-layer">
+            <div class="sec-header">
+              <h2>核心优势</h2>
+            </div>
+            <div class="sec-body">
+              <div class="row cf">
+                <div class="col-12">
+                  <ul class="ul-sec cf">
+                    <!--item-->
+                    <li class="li-sec youshi1">
+                      <div class="box">
+                        <div class="box-body">
+                          <div class="text-area">
+                            <h3>
+                              <span><em>专业的</em>AI团队</span>
+                            </h3>
+
+                            <div class="hint">
+                              <p>
+                                腾讯觅影团队由50多位博士以上学历人工智能科学家，400多位AI应用工程师以及数名医疗专家和产品经理组成，与多个顶尖医学院校和医疗机构共建共享基于临床应用诊断的联合科研项目，获得多级政府部门的认可和支持，开展人工智能辅助重大疾病早期筛查，助力精准扶贫。
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!--item-->
+                    <li class="li-sec youshi2">
+                      <div class="box">
+                        <div class="box-body">
+                          <div class="text-area">
+                            <h3>
+                              <span><em>成熟的</em>AI机房</span>
+                            </h3>
+
+                            <div class="hint">
+                              <p>
+                                腾讯觅影拥有专业的人工智能数据处理机房，为AI研究提供了安全可靠的基础设施保障；价值数亿的GPU计算集群，支撑着深度学习网络的快速迭代，单个检查超过500张图片，6s即可运算处理完成。为AI模型的快速迭代优化和病种扩充保驾护航。
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!--item-->
+                    <li class="li-sec youshi3">
+                      <div class="box">
+                        <div class="box-body">
+                          <div class="text-area">
+                            <h3>
+                              <span><em>绝对的</em>数据安全</span>
+                            </h3>
+
+                            <div class="hint">
+                              <p>
+                                腾讯觅影相关研究数据采用物理隔离的方式存储于腾讯专业的人工智能机房，同时与医院签订数据保密协议，以防数据泄露；觅影始终服务于医院和医学机构，医院脱敏图像通过加密传输到腾讯觅影，
+                                秒级完成AI运算，并把AI诊断意见返回给医院，辅助医生提高诊断效率。</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- section close -->
+        <!-- section contact -->
+        <section class="section contact" id="contact">
+          <div class="sec-layer">
+            <h2>联系我们</h2>
+            <h3>合作咨询请发送邮件至：
+              <a href="mailto:miying@tencent.com">miying@tencent.com</a>
+            </h3>
+            <h3>售后与改进建议请发送邮件至：<a href="mailto:miying_cs@tencent.com">miying_cs@tencent.com</a></h3>
+          </div>
+        </section>
+        <!-- end of section contact -->
+        <div class="section footer new_footer">
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-header">
+        <h2>联合出品</h2>
+      </div>
+      <div class="panel-body">
+        <div class="cop">
+          <ul class="cf">
+            <li>
+              <div class="item">
+                <div class="footer-img logo-jiankang"></div>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="footer-img logo-ai"></div>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="footer-img logo-tianyan"></div>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="footer-img logo-txyun"></div>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="footer-img logo-qiyewx"></div>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="footer-img logo-gongyi"></div>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="footer-img logo-zhineng"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <div class="link">
+            <div class="link-overview">
+              <p>Copyright © 1998 - 2025 Tencent. All Rights Reserved.</p>
+              <p>备案号：<a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备19002559号 -2</a></p>
+              <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502009230"><img src="https://static.wecity.qq.com/miying/tea/batb-f56dbceb8618d2742257ce97555bd04a.png" alt="">粤公网安备 44030502009230号</a>
+              <p>公司地址：深圳市南山区深南大道10000号</p>
+              <!-- <p>联系电话：0755-86013388-671132</p> -->
+            </div>
+            <div class="link-detail">
+              <a target="_blank" href="https://cloud.tencent.com/">腾讯云</a>
+              <a target="_blank" href="https://yb.qq.com/">腾讯医疗支付</a>
+              <a target="_blank" href="http://ai.tencent.com/">Tencent AI lab</a>
+              <a target="_blank" href="https://gongyi.qq.com/">腾讯公益</a>
+              <a target="_blank" href="https://jarvislab.tencent.com/">腾讯天衍实验室</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <!---回到顶部-->
+        <div class="backtop">
+          <a href="javascript:void(0);" class="ico-backtop" title="回到顶部"></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="//beta.gtimg.com/hospital_img/static/lib/js/jquery-1.12.2.min.js"></script>
+<script src="//beta.gtimg.com/hospital_img/static/lib/js/jquery-ui.min.js"></script>
+<script src="/official/js/scripts.js?1523439637649"></script>
+<!--监控-->
+<script src="//beta.gtimg.com/hospital_img/tracker/aitracker-min.js"></script>
+<script>
+    window.__TRACKER ? window.__TRACKER.setConfig({
+        appId: 'AIWebPC'// appId，一般为工程名
+    }) : '';
+</script> 
+    <script src="//beta.gtimg.com/hospital_img/static/lib/js/slick-1.8.0/slick.min.js"></script>
+    <script src="/official/js/homepage.js"></script>
+    <script>
+      // /**
+      //  * detect IE
+      //  * returns version of IE or false, if browser is not Internet Explorer
+      //  */
+      // function detectIE() {
+      //   var ua = window.navigator.userAgent;
+      //
+      //   var msie = ua.indexOf('MSIE ');
+      //   if (msie > 0) {
+      //     // IE 10 or older => return version number
+      //     return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+      //   }
+      //
+      //   var trident = ua.indexOf('Trident/');
+      //   if (trident > 0) {
+      //     // IE 11 => return version number
+      //     var rv = ua.indexOf('rv:');
+      //     return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+      //   }
+      //
+      //   var edge = ua.indexOf('Edge/');
+      //   if (edge > 0) {
+      //     // Edge (IE 12+) => return version number
+      //     return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+      //   }
+      //
+      //   // other browser
+      //   return false;
+      // }
+      // if (detectIE()) {
+      var size = 75;
+      $('.hide-wrap .li-sec').hover(
+        function() {
+          var span = $(this).find('.hide-span');
+          if (span && span.length) {
+            $(span).text($(span).attr('data'))
+          }
+        },
+        function() {
+          var span = $(this).find('.hide-span');
+          if (span && span.length) {
+            var data = $(span).attr('data');
+            if (data.length > size) {
+              $(span).text(data.substr(0, size) + '...')
+            }
+          }
+        }
+      );
+      $('.hide-span').each(function() {
+        var data = $(this).attr('data');
+        if (data.length > size) {
+          $(this).text(data.substr(0, size) + '...')
+        }
+      });
+      // }
+    </script>
+  </body>
+
+</html>
